@@ -1,6 +1,7 @@
 ---
 title: Why I Chose Gatsby
 date: "2019-04-11"
+description: Top 5 Reasons I Chose Gatsby.
 ---
 
 Here are the top 5 reasons I chose to create my website with Gatsby.
