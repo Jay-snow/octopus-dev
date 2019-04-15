@@ -85,7 +85,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
-  description: ``,
+  description: `Marcus Snow's personal website.`,
 }
 
 SEO.propTypes = {
