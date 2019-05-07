@@ -7,7 +7,7 @@ date: "2019-05-07"
 Two weeks ago I finished __*Born To Run: A Hidden Tribe, Superatheletes, and the Greatest Race the World Has Never Seen*__, and I'd like to share my thoughts on the book.
 
 
-I'm throwing __*Born To Run*__ onto my "Must Read" pile - especially for anyone who runs/jogs/walks in their spare time. This book is an enjoyable mashup of anthropological study and story-telling. The main plot follows the author, Christopher McDougall, on his journey into the Copper Canyons to try and find the answer to the opening question: "My does my knee hurt when I run?". What begins as a nagging knee pain for the author ends as an exploatory  between Man's relationship and history with running. 
+I'm throwing __*Born To Run*__ onto my "Must Read" pile - especially for anyone who runs/jogs/walks in their spare time. This book is an enjoyable mashup of anthropological study and story-telling. The main plot follows the author, Christopher McDougall, on his journey into the Copper Canyons to try and find the answer to the opening question: "My does my knee hurt when I run?". What begins as a nagging knee pain for the author ends as an exploratory  between Man's relationship and history with running. 
 
 
 ![Born To Run](book-review-born-to-run.jpg)
@@ -16,7 +16,7 @@ I'm throwing __*Born To Run*__ onto my "Must Read" pile - especially for anyone 
 
 The adventure McDougall embarks is fascinating and educational, but also a bit slow. The story spends a lot of time jumping around, and it can take a while for the payoff. The real meat of the story lies within the Tarahumara tribe, the hidden tribe hinted at in the subtitle. McDougall uses this "lost" tribe as a contextual background for the history of running. From Neanderthals to Nike entering the running scene in the 70's, by the end of this book you will feel well educated on the subject of long-distance running in America. 
 
-I started running in college as part of my boxing workout regime. Back then I just called it "roadwork", and it was just one workout of many to get into fighting shape. I ended up only boxing for 6 months, but I have run ever since. As much as I've enjoyed running, I can't say I'm that knowlegable on the subject. I think the most I've ever done is cruise around on Runnersworld.com back in college.
+I started running in college as part of my boxing workout regime. Back then I just called it "roadwork", and it was just one workout of many to get into fighting shape. I ended up only boxing for 6 months, but I have run ever since. As much as I've enjoyed running, I can't say I'm that knowledgeable on the subject. I think the most I've ever done is cruise around on Runnersworld.com back in college.
 
 > There is no higher achievement a book can reach, I think, than making a change in your lifestyle.
 
