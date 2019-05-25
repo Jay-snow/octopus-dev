@@ -3,18 +3,28 @@ title: "My first Wordpress headache"
 date: "2019-05-24"
 ---
 
-Wordpress is the internet's most popular content management system. And like with anything popular, there are a fair amount of Wordpress haters in the web development
-community. The WP engine seems to cause as much strife as it does happiness.
+Most web developers have pretty strong opinions on [Wordpress](https://wordpress.org/). I've never done major techinical work in Wordpress - I've customized a few themes and have pushed a few posts in my day, but I haven't created a plugin or created a theme from scratch.
 
-I've never really had a vendetta for Wordpress, but I've never done anything *major* with it before. In an effort to fix this, I have started making my first ever Wordpress theme. Everything has been pretty smooth sailing. . .
+At least I hadn't until a few weeks ago. I decided to dive in and build my very own Wordpress theme. 
 
-Until last night. Suddenly, Wordpress had issues connecting to it's mySQL database. Half an hour later I discovered that MAMP was simply not turning on it's mySQL servers anymore. After some time I was able to restore my mySQL servers, but now I was hit with "No connection could be made because the target machine actively refused it."
+> New errors can be as exciting as they are terrifying - am I moving closer toward or away from my goal?
 
-Okay. I've never seen that error before, but I'll take any new error as progress at this point. 
+I downloaded Wordpress, opened a "Making your first wordpress theme" tutorial, and hit the ground running. Having only used PHP and mySQL for my twitter-clone project, I was amazed at how easy it was to get everything up and running. __I didn't have a single issue. . . Until last night.__
 
- Two hours of fiddling later, with half-a-dozen StackedOverflow solutions attempted, I ended un uninstallling MAMP and moving back to another service I was more used to: XAMPP.
+My adorable dumb cat, Loki, jumped directly onto tower's restart button. When I finished rebooting, Wordpress was suddenly throwing a fit. Whenever I tried to access my localhost/wordpress-domain, I would get the error "No connection could be made because the target machine actively refused it.". 
 
-I migrated everything from my MAMP /htdocs file to my XAMP /htdocs to continue working on my Wordpress theme.
+After some poking around, I found out that it wasn't *actually* Wordpress's fault - My MAMP mySQL servers had stopped turning on.
+
+![The light next to MySQL Server should be lit up. It's not.](mamp.JPG)
+<div style="text-align:center;margin-bottom:15px;font-style:italic;">The light next to MySQL Server should be lit up. It's not.</div>
+
+__Wordpress kept saying "No connection could be made because the target machine actively refused it.", but I had no idea what this error meant.__
+
+I relied on every programmer's dig-out-of-this-hole secret technique: Googling the error and combing through stackedoverflow posts. I tried just about everything that seemed even half reasonable. Finally, one of solutions marched me further to my goal - Deleting the mysql-bin.index files. 
+
+I was now at the very least seeing a new error. New errors can be as exciting as they are terrifying - am I moving closer toward or away from my goal?
+
+But of course it threw an error during installation, so that option was out the window too. Two hours down and I hadn't even started programming for the day yet, so I mad a drastic decision. I would move away from MAMP entirely. I still had XAMPP from a previous project, so I I migrated everything from my MAMP /htdocs file to my XAMP /htdocs.
 
 Again a new error. This time the root user had invalid permissions. I had a few other projects on the 
 
