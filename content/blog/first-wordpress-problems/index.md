@@ -32,15 +32,15 @@ And wouldn't you know it - another new error. This time the root user had invali
 
 I learned that XAMPP has a tool called "resetbat" that resets the username and password to root (Or something.) No dice solving my issue though.
 
-I checked, double checked, and triple checked any kind of config file I could find. wp-config seemed fine. 
+I checked, double checked, and triple checked any kind of config file I could find. The main suspect,  wp-config seemed fine. 
 
 I started to go crazy until I stepped away and thought about it more.
 
-Ok, I know i'm getting a permission error. Why? Why am I getting this? I slowly and carefully checked the privledges in my phpMyAdmin. Everything looked good.
+Ok, I know i'm getting a permission error. Why? Why am I getting this? I slowly and carefully checked the privileges in my phpMyAdmin. Everything looked good.
 
 I went back to my wp-config file. Everything still looked good - but I had a second thought. What if I haven't been looking at the *right* wp-config file.
 
-Lo' and behold, that was my issue. I had been updating the password on the *wrong* config file. 
+Lo' and behold, that was my issue. I had been updating the password on the *wrong* config file. Somehow, within Visual Studio Code, this whole time I was updating my *old* wp-config file from MAMP. Ugh.
 
 So in recap, here is my problem tree:
 
@@ -55,3 +55,4 @@ So in recap, here is my problem tree:
 9.    3A: ATTEMPT: Tried to restore priveledges again
 10.    3B: ATTEMPT: Recreate the database in XAMPP
  11.   3C: Solution: Update the *correct* wp-config, ya siily! 
+
