@@ -22,11 +22,13 @@ __Wordpress kept saying "No connection could be made because the target machine 
 
 I relied on every programmer's dig-out-of-this-hole secret technique: Googling the error and combing through stackedoverflow posts. I tried just about everything that seemed even half reasonable. Finally, one of solutions marched me further to my goal - Deleting the mysql-bin.index files. 
 
-I was now at the very least seeing a new error. New errors can be as exciting as they are terrifying - am I moving closer toward or away from my goal?
+I was now seeing a new error. New errors can be as exciting as they are terrifying - am I moving closer toward or away from my goal?
 
-But of course it threw an error during installation, so that option was out the window too. Two hours down and I hadn't even started programming for the day yet, so I mad a drastic decision. I would move away from MAMP entirely. I still had XAMPP from a previous project, so I I migrated everything from my MAMP /htdocs file to my XAMP /htdocs.
+Wordpress was now asking me to install, which was troubling because of course it was already installed.. I wasn't exactly sure what installing would do to my files, so I continued my search on google.
 
-Again a new error. This time the root user had invalid permissions. I had a few other projects on the 
+Four hours down and I hadn't even started programming for the day yet, so I made a drastic decision. I would move away from MAMP entirely. I still had XAMPP from a previous project, so I migrated everything from my MAMP /htdocs file to my XAMP /htdocs.
+
+And wouldn't you know it - another new error. This time the root user had invalid permissions. I remembered I had changed the password for XAMPP's database from root to ******, but updating that still gave me permission
 
 I learned that XAMPP has a tool called "resetbat" that resets the username and password to root (Or something.) No dice solving my issue though.
 
@@ -43,13 +45,13 @@ Lo' and behold, that was my issue. I had been updating the password on the *wron
 So in recap, here is my problem tree:
 
 1. MAMP is not loading it's mySQL server.
-    1A: ATTEMPT: Delete log files in MAMP/DB/MYSQL. No effect
-    1B: SOLUTION: Delete mysql-bin.index files, restart servers. This worked, but brought my to my next issue.
-2. "No connection could be made because the target machine actively refused it."
-    2A: ATTEMPT: Disable all firewalls
-    2B: ATTEMPT: Restore priveledges to root user
-    2C: SOLUTION: Delete MAMP and move to XAMPP. I ended up reading lots of MAMP users who had the same mySQL server issues, and I've never experienced any with XAMPP.
-3. "Access Denied for User 'root'@'localhost' (using password: YES) - No Privileges?
-    3A: ATTEMPT: Tried to restore priveledges again
-    3B: ATTEMPT: Recreate the database in XAMPP
-    3C: ATTEMPT: 
+2. ATTEMPT: Delete log files in MAMP/DB/MYSQL. No effect
+3. SOLUTION: Delete mysql-bin.index files, restart servers. This worked, but brought my to my next issue.
+4. "No connection could be made because the target machine actively refused it."
+5. ATTEMPT: Disable all firewalls
+6. ATTEMPT: Restore priveledges to root user
+7. SOLUTION: Delete MAMP and move to XAMPP. I ended up reading lots of MAMP users who had the same mySQL server issues, and I've never experienced any with XAMPP.
+8. "Access Denied for User 'root'@'localhost' (using password: YES) - No Privileges?
+9.    3A: ATTEMPT: Tried to restore priveledges again
+10.    3B: ATTEMPT: Recreate the database in XAMPP
+ 11.   3C: Solution: Update the *correct* wp-config, ya siily! 
