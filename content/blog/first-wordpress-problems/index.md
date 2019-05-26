@@ -28,19 +28,19 @@ Wordpress was now asking me to install, which was troubling because of course it
 
 Four hours down and I hadn't even started programming for the day yet, so I made a drastic decision. I would move away from MAMP entirely. I still had XAMPP from a previous project, so I migrated everything from my MAMP /htdocs file to my XAMP /htdocs.
 
-And wouldn't you know it - another new error. This time the root user had invalid permissions. I remembered I had changed the password for XAMPP's database from root to ******, but updating that still gave me permission
+And wouldn't you know it - another new error. This time the root user had invalid permissions. I remembered I had changed the password for XAMPP's database from root to ******, so I updated my newly cloned XAMPP wp-config file to have the right password. Oddly enough though, I still was hit by a permission error.
 
-I learned that XAMPP has a tool called "resetbat" that resets the username and password to root (Or something.) No dice solving my issue though.
+Returning to Google, I learned that XAMPP has a tool called "resetroot" that resets the root password/privileges for MySQL/PHPMyAdmin. I returned Visual Studio Code  and changed the password back on my wp-config file. I tried to access my domain - still no luck.
 
-I checked, double checked, and triple checked any kind of config file I could find. The main suspect,  wp-config seemed fine. 
+I was completely at wits end now. I checked, double checked, and triple checked any kind of database or config file I could find. *Something* had to have the wrong password, and the main suspect, wp-config, seemed fine.
 
-I started to go crazy until I stepped away and thought about it more.
+I was able to find a temporary workaround on Youtube: [How to make sql server ignore root password](https://www.youtube.com/watch?v=LKE1G4sinBM&t=73s). I went to my XAMPP/mySQL/bin/my.ini. If you go down to the __mysqld__ section, you can type in this command "skip-grant-tables". Now when your server loads, it will not load the [grant tables](http://www.devshed.com/c/a/mysql/the-mysql-grant-tables/), which allows you to connect to the server as root without a password. By doing this, I was able to log in and acccess my Wordpress site immediately.
 
-Ok, I know i'm getting a permission error. Why? Why am I getting this? I slowly and carefully checked the privileges in my phpMyAdmin. Everything looked good.
+This also gave the solution to my problem. In retrospect, I'm not sure how I managed to miss it for this long.
 
-I went back to my wp-config file. Everything still looked good - but I had a second thought. What if I haven't been looking at the *right* wp-config file.
+ What if I haven't been looking at the *right* wp-config file.
 
-Lo' and behold, that was my issue. I had been updating the password on the *wrong* config file. Somehow, within Visual Studio Code, this whole time I was updating my *old* wp-config file from MAMP. Ugh.
+Lo' and behold, that was my issue. I had been updating the password on the *wrong* config file. Somehow, within Visual Studio Code, this whole time I was updating my *old* wp-config file from my MAMP. Ugh.
 
 So in recap, here is my problem tree:
 
@@ -54,5 +54,7 @@ So in recap, here is my problem tree:
 8. "Access Denied for User 'root'@'localhost' (using password: YES) - No Privileges?
 9.    3A: ATTEMPT: Tried to restore priveledges again
 10.    3B: ATTEMPT: Recreate the database in XAMPP
- 11.   3C: Solution: Update the *correct* wp-config, ya siily! 
+11.   3C: Solution: Update the *correct* wp-config, ya siily! 
 
+
+It doesn't feel *exactly* fair to blame Wordpress directly for this problem, but it's definitely my first Wordpress related headache. Like all debugging processess go, it feels so good it get it resolved.
