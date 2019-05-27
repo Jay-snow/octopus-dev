@@ -1,13 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Marcus Snow`,
-    author: `Marcus Snow`,
-    description: `Marcus Snow's is a developer, writer, and avid gamer who enjoys sharing his passions. `,
-    siteUrl: `https://wizardly-stallman-e88114.netlify.com/`,
+    title: 'Marcus Snow',
+    author: 'Marcus Snow',
+    description:
+      'A paginated starter blog demonstrating what Gatsby can do. Extension of gatsby-starter-blog.',
+    siteUrl: 'https://wizardly-stallman-e88114.netlify.com/',
     social: {
       twitter: `kylemathews`,
     },
   },
+  pathPrefix: '/gatsby-paginated-blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
