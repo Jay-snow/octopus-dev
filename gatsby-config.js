@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Marcus Snow.dev`,
+    title: `Marcus Snow`,
     author: `Marcus Snow`,
     description: `Marcus Snow's is a developer, writer, and avid gamer who enjoys sharing his passions. `,
     siteUrl: `https://wizardly-stallman-e88114.netlify.com/`,

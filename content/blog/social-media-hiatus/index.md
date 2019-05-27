@@ -1,11 +1,10 @@
 ---
 title: Social Media Hiatus
 date: "2019-04-15"
-
 ---
 
 ![Social Media](social-media.jpg)
-Photo by [Sara Kurfeß](https://unsplash.com/@stereophototyp)t
+Photo by [Sara Kurfeß](https://unsplash.com/@stereophototypt)
 
 On April 9th I decided to go on a social media hiatus. For me this meant no more Twitter, no more Reddit, and eventually no more Youtube. (I waffled on whether Youtube qualifies as a social media website, but ultimately decided it checked enough boxes)
 

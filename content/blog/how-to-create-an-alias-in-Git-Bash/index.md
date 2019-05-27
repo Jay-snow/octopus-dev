@@ -1,6 +1,6 @@
 ---
 title: "How To Create An Alias in Git Bash"
-date:"2019-05-26"
+date: "2019-05-26"
 ---
 
 If you've spent any time in Git Bash, then eventually you will get sick of cd'ing everywhere to get to your projects.

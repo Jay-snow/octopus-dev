@@ -1,15 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const isRootPath = location.pathname === `${__PATH_PREFIX__}/`
+    const pageNumber = location.pathname
+      .split('/')
+      .filter(Boolean)
+      .pop()
+    const isPaginatedPath = pageNumber && Boolean(pageNumber.match(/^[0-9]+$/))
     let header
 
-    if (location.pathname === rootPath) {
+    if (isRootPath || isPaginatedPath) {
       header = (
         <h1
           style={{
@@ -60,8 +65,8 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
-        <main>{children}</main>
+        {header}
+        {children}
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
