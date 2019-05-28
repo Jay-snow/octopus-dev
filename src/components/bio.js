@@ -28,7 +28,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>, tech nerd extrodinaire.
+              I'm <strong>{author}</strong>: a programmer, a writer, and game enthusiast.
               {` `}
               
               <a href={`https://twitter.com/${social.twitter}`}>
