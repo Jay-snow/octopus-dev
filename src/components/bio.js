@@ -38,9 +38,9 @@ function Bio() {
               }}
             />
             <p>
-              Hi! I'm <strong>{author}</strong>, and I like to write about technology, psychology, and video games.
+            I'm <strong>{author}</strong>: a programmer, a writer, and game enthusiast.
               {` `}
-             <a href> You can see my resume here.</a>
+             
             </p>
           </div>
         )
