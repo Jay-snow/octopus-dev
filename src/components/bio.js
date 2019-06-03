@@ -7,6 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -38,7 +39,7 @@ function Bio() {
               }}
             />
             <p>
-            I'm <strong>{author}</strong>: a programmer, a writer, and game enthusiast.
+            I'm <Link to="/aboutme/"><strong>{author}</strong></Link>: a programmer, a writer, and game enthusiast.
               {` `}
              
             </p>
