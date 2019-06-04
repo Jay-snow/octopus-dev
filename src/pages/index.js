@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Navbar from "../components/Navbar"
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,6 +14,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
+      <div>
+      <Navbar />
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
@@ -39,6 +42,7 @@ class BlogIndex extends React.Component {
           )
         })}
       </Layout>
+      </div>
     )
   }
 }
