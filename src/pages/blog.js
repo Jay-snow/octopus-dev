@@ -16,7 +16,8 @@ class BlogIndex extends React.Component {
     return (
       <div>
       <Navbar />
-      <Layout location={this.props.location} title="Blog Posts">
+      <Layout location={this.props.location} >
+
         <SEO title="All posts" />
         
         {posts.map(({ node }) => {

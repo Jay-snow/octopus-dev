@@ -27,7 +27,9 @@ function Bio() {
               display: `flex`,
               marginLeft: `auto`,
               marginRight: `auto`,
-              maxWidth: rhythm(22),
+              maxWidth: rhythm(24),
+              color: `#f1e0d4`,
+              padding: `0 ${rhythm(3 / 4)}`,
               
             }}
           >
