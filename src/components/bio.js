@@ -12,19 +12,26 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
+
+
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
+        const siteTitle = data.site.siteMetadata.title
         return (
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: rhythm(22),
+              
             }}
           >
+            { /*
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -38,8 +45,14 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
+            */ }
+            
             <p>
-            I'm <Link to="/aboutme/"><strong>{author}</strong></Link>: a programmer, a writer, and game enthusiast.
+            <h1 style={{ marginTop:`0`  }}>
+              MarcusSnow.dev
+            </h1>
+
+            I'm <Link to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast.
               {` `}
              
             </p>

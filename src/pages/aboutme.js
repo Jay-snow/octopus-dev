@@ -16,7 +16,7 @@ render() {
     
     <div>
     
-    <h1> Testing.</h1>
+    <h1> I'm Marcus Snow. I'm a web developer based in Atlanta, Georgia.</h1>
     </div>
     </Layout>
     )
