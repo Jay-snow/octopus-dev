@@ -7,6 +7,13 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Navbar from "../components/Navbar"
 
+
+const SkillList = props => (
+  <li style={{ display: `inline-block`, marginRight: `1rem`, color:`red` }}>
+    {props.children}
+  </li>
+)
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -16,27 +23,27 @@ class BlogIndex extends React.Component {
     return (
       <div>
       <Navbar />
-      <Layout location={this.props.location} title="Blog Posts">
+      <Layout location={this.props.location} title="Portfolio">
         <SEO title="All posts" />
         
-        <p> Hi </p>
         <h2> Languages </h2>
         <ul>
-          <li> HTML </li>
-          <li> CSS </li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>PHP</li>
+          <SkillList>HTML5 </SkillList>
+          <SkillList> CSS </SkillList>
+          <SkillList>Javascript</SkillList>
+          <SkillList>React </SkillList>
+          <SkillList>PHP</SkillList>
   
         </ul>
 
         <h2>Tools &amp; Databases</h2>
+
         <ul>
-          <li>Git/GitHub</li>
-          <li>Gatsby</li>
-          <li>APIs</li>
-          <li>mySQL </li>
-          <li>Wordpress </li>
+          <SkillList>Git/GitHub</SkillList>
+          <SkillList>Gatsby</SkillList>
+          <SkillList>APIs</SkillList>
+          <SkillList>mySQL </SkillList>
+          <SkillList>Wordpress </SkillList>
         </ul>
 
 
