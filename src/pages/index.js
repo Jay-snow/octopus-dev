@@ -46,13 +46,15 @@ class BlogIndex extends React.Component {
         </ul>
 
       
-
       </Layout>
 
-      <PortfolioProject name="Marcussnow.dev"
+      <PortfolioProject 
+      bgColor="teal"
+      name="Marcussnow.dev"
       description="A custom created blog, made with React and Gatsby. "
       />
-      <PortfolioProject name="Poke-A-Tweet"
+      <PortfolioProject 
+      name="Poke-A-Tweet"
       description="A Social Media website created with HTML5, PHP, and mySQL."
       />
       </div>

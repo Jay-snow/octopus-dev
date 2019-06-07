@@ -5,7 +5,7 @@ import { rhythm } from "../utils/typography";
 import { Link } from "gatsby";
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
+    <Link style={{color: `#b59575`}} to={props.to}>{props.children}</Link>
   </li>
 )
 
@@ -25,7 +25,7 @@ function Navbar() {
       >
 
       <ul style={{ listStyle: `none`, marginBottom:`0`}}>
-        <ListLink to="/">Projects</ListLink>
+        <ListLink  to="/">Projects</ListLink>
         <ListLink to="/about/">Resume</ListLink>
         <ListLink to="/aboutme/">About</ListLink>
         <ListLink to="/blog/">Blog</ListLink>

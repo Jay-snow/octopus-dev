@@ -50,11 +50,11 @@ function Bio() {
             */ }
             
             <p>
-            <h1 style={{ marginTop:`0`  }}>
-              MarcusSnow.dev
+            <h1 style={{  margin:`0`, marginBottom:`0.25em` }}>
+             <Link style={{  textDecoration: `none`, boxShadow: `none`, color: `#f1e0d4`, fontSize:`0.75em` }} to="/"> MarcusSnow.dev</Link>
             </h1>
 
-            I'm <Link to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast.
+            I'm <Link  to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast.
               {` `}
              
             </p>
