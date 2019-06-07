@@ -1,8 +1,8 @@
-import React from "react"
-import Bio from "../components/bio"
-import { rhythm } from "../utils/typography"
+import React from "react";
+import Bio from "../components/bio";
+import { rhythm } from "../utils/typography";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>{props.children}</Link>
@@ -36,4 +36,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar;
