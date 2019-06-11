@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar"
 
 
 const SkillList = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem`, color:`red` }}>
+  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     {props.children}
   </li>
 )
@@ -22,12 +22,13 @@ class BlogIndex extends React.Component {
     return (
       <div>
       <Navbar />
-      <Layout location={this.props.location} title="Portfolio">
+      <Layout location={this.props.location} title="Portfolio" style={{paddingTop:`0`}}>
         <SEO title="All posts" />
         
         <h2> Languages </h2>
         <ul>
           <SkillList>HTML5 </SkillList>
+          <SkillList>&bull; </SkillList>
           <SkillList> CSS </SkillList>
           <SkillList>Javascript</SkillList>
           <SkillList>React </SkillList>

@@ -49,7 +49,7 @@ function Bio() {
             />
             */ }
             
-            <p>
+            <div>
             <h1 style={{  margin:`0`, marginBottom:`0.25em` }}>
              <Link style={{  textDecoration: `none`, boxShadow: `none`, color: `#f1e0d4`, fontSize:`0.75em` }} to="/"> MarcusSnow.dev</Link>
             </h1>
@@ -57,7 +57,7 @@ function Bio() {
             I'm <Link  to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast.
               {` `}
              
-            </p>
+            </div>
           </div>
         )
       }}
