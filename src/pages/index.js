@@ -26,7 +26,8 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-      <Svg width={`40`} />
+      <Svg name="html5" width={`40`} />
+      <Svg name="css3" width={`40`} />
 
       <Navbar />
       <Layout location={this.props.location} title="Portfolio" style={{paddingTop:`0`}}>
@@ -34,7 +35,7 @@ class BlogIndex extends React.Component {
         
 
         <h2> Languages </h2>
-        <img src="content/assets/html5.svg" />
+
         <ul>
           <SkillList> HTML5 </SkillList>
           <SkillList>&bull; </SkillList>
