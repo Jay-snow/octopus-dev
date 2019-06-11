@@ -6,12 +6,17 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Navbar from "../components/Navbar"
 
+import Svg from "../components/svg.js"
+
 
 const SkillList = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     {props.children}
   </li>
 )
+
+
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,13 +26,17 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
+      <Svg width={`40`} />
+
       <Navbar />
       <Layout location={this.props.location} title="Portfolio" style={{paddingTop:`0`}}>
         <SEO title="All posts" />
         
+
         <h2> Languages </h2>
+        <img src="content/assets/html5.svg" />
         <ul>
-          <SkillList>HTML5 </SkillList>
+          <SkillList> HTML5 </SkillList>
           <SkillList>&bull; </SkillList>
           <SkillList> CSS </SkillList>
           <SkillList>Javascript</SkillList>
