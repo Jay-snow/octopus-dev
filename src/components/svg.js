@@ -16,7 +16,8 @@ function svgRender(props) {
 
     return (
     <svg 
-    aria-hidden="true" 
+    aria-hidden="true"
+    display="block" 
     focusable="false" 
     data-prefix="fab" 
     data-icon="html5" 

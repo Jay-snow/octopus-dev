@@ -10,12 +10,17 @@ render() {
     return (
         <div>
     <Navbar />
-    <Layout location={this.props.location} >
+    <Layout location={this.props.location} title="About Me" >
+    
+    <p> Hi! I'm Marcus Snow. I have over five years experience developing websites and analyzing landing pages.</p>
+
+
+
+    <p>I am currently looking for work. If you are looking for a junior developer, I would love to hear from you.  </p>
     
     
     
-    <h1> I'm Marcus Snow. I'm a web developer based in Atlanta, Georgia.</h1>
-    
+    <p></p> 
     </Layout>
     </div>
     )

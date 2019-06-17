@@ -10,7 +10,17 @@ import Svg from "../components/svg.js"
 
 
 const SkillList = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li style={{ 
+    display: `inline-block`, 
+    marginRight: `1rem`, 
+    backgroundColor:`#007bff`,
+    borderRadius: `.25rem`,
+    fontWeight:`700`,
+    verticalAlign:`baseline`,
+    fontSize: `75%`,
+    color: `#fff`,
+    textAlign: `center`,
+    padding: `2px 5px` }}>
     {props.children}
   </li>
 )
@@ -26,48 +36,44 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-      <Svg name="html5" width={`40`} />
-      <Svg name="css3" width={`40`} />
+
 
       <Navbar />
-      <Layout location={this.props.location} title="Portfolio" style={{paddingTop:`0`}}>
+      <Layout location={this.props.location}  style={{paddingTop:`0`}}>
         <SEO title="All posts" />
-        
+        <h2>Portfolio</h2>
+        <p>Web Developer based in Atlanta. Passionate about web technologies and the people who use them. Love learning new technologies and tasks, and
+        devising solutions for challenging tasks.</p>
+        <h2> Projects </h2>
 
-        <h2> Languages </h2>
+        <PortfolioProject 
+      name="Poke-A-Tweet"
+      description="A twitter inspired social media website. Features include login and authentication, unique user profile pages, a shared timeline, and more."
+      plink="https://snowjay.org/projects/twitter-clone/"
+      >
+        <SkillList>PHP </SkillList>
+        <SkillList>mySQL </SkillList>
+        <SkillList>Bootstrap </SkillList>
+        <SkillList>Javascript </SkillList>
+       </PortfolioProject>
 
-        <ul>
-          <SkillList> HTML5 </SkillList>
-          <SkillList>&bull; </SkillList>
-          <SkillList> CSS </SkillList>
-          <SkillList>Javascript</SkillList>
-          <SkillList>React </SkillList>
-          <SkillList>PHP</SkillList>
-  
-        </ul>
-
-        <h2>Tools &amp; Databases</h2>
-
-        <ul>
-          <SkillList>Git/GitHub</SkillList>
-          <SkillList>Gatsby</SkillList>
-          <SkillList>APIs</SkillList>
-          <SkillList>mySQL </SkillList>
-          <SkillList>Wordpress </SkillList>
-        </ul>
-
-      
-      </Layout>
-
-      <PortfolioProject 
+        <PortfolioProject 
       bgColor="teal"
       name="Marcussnow.dev"
       description="A custom created blog, made with React and Gatsby. "
-      />
-      <PortfolioProject 
-      name="Poke-A-Tweet"
-      description="A Social Media website created with HTML5, PHP, and mySQL."
-      />
+      plink="https://snowjay.org/projects/twitter-clone/"
+      >
+        <SkillList>React </SkillList>
+        <SkillList>Gatsby </SkillList>
+        <SkillList>Netlify </SkillList>
+        <SkillList>HTML </SkillList>
+        <SkillList>CSS </SkillList>
+      </PortfolioProject>
+      
+      </Layout>
+
+    
+
       </div>
     )
   }
