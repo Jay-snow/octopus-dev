@@ -40,10 +40,9 @@ class BlogIndex extends React.Component {
 
       <Navbar />
       <Layout location={this.props.location}  style={{paddingTop:`0`}}>
-        <SEO title="All posts" />
+        <SEO title="About Me" />
         <h2>Portfolio</h2>
-        <p>Web Developer based in Atlanta. Passionate about web technologies and the people who use them. Love learning new technologies and tasks, and
-        devising solutions for challenging tasks.</p>
+        <p>Web Developer based in Atlanta. I am currently looking for work in front-end development - I would love to <a href="mailto:marcusjsnow1@gmail.com">hear from you. </a></p>
         <h2> Projects </h2>
 
         <PortfolioProject 
@@ -61,7 +60,7 @@ class BlogIndex extends React.Component {
       bgColor="teal"
       name="Marcussnow.dev"
       description="A custom created blog, made with React and Gatsby. "
-      plink="https://snowjay.org/projects/twitter-clone/"
+      plink="/blog"
       >
         <SkillList>React </SkillList>
         <SkillList>Gatsby </SkillList>

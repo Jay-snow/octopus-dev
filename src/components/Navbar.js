@@ -27,7 +27,6 @@ function Navbar() {
       <ul style={{ listStyle: `none`, marginBottom:`0`}}>
         <ListLink  to="/">Projects</ListLink>
         <ListLink to="/about/">Resume</ListLink>
-        <ListLink to="/aboutme/">About</ListLink>
         <ListLink to="/blog/">Blog</ListLink>
       </ul>
     </div>

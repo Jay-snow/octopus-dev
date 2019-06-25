@@ -3,14 +3,18 @@ title: "How To Create An Alias in Git Bash"
 date: "2019-05-26"
 ---
 
-If you've spent any time in Git Bash, then eventually you will get sick of cd'ing everywhere to get to your projects.
+Alias's in Git Bash are very easy to setup, and can dramatically improve your quality of life. 
 
-This is where the power of alias comes to play! You can use the alias command to essentially create shortcuts.
+Alias's are essentially keyboard shortcuts. For the purpose of this article, I'm going to talk about how to set up an alias to 
 
-To create an alias, you'll need to get to your .bashrc folder.
+To create an alias, you'll need to open your .bashrc file. I found this in my root directory - if you don't see the file you may need to create it.
 
-Once inside, simply type
+You can look for the file using "ls -all" to see all the files in your directory. You can open the file with the command `notepad .bashrc` or `vi .bashrc`.
 
-shortcutcode = '/d/xampp/htdocs/wordpress/'
+You setup your on a line of text. For example
 
-It's that simple!
+`alias wpProj = 'cd /d/xampp/htdocs/wordpress/'`
+
+Would take me to my wordpress project directory by typing wpProj.
+
+Once you have your shortcut written, save and exit notepad / escape vim and you can now use your new shortcut.
