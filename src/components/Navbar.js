@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "./resume.jpg";
 import Bio from "../components/bio";
 import { rhythm } from "../utils/typography";
 
@@ -8,6 +9,8 @@ const ListLink = props => (
     <Link style={{color: `#b59575`}} to={props.to}>{props.children}</Link>
   </li>
 )
+
+console.log(resume);
 
 function Navbar() {
     return (
@@ -26,7 +29,8 @@ function Navbar() {
 
       <ul style={{ listStyle: `none`, marginBottom:`0`}}>
         <ListLink  to="/">Projects</ListLink>
-        <ListLink to="/about/">Resume</ListLink>
+        <li style={{display:`inline-block`, marginRight:`1rem`}}>
+          <a style={{color:`#b59575`}} href={resume}>Resume</a></li>
         <ListLink to="/blog/">Blog</ListLink>
       </ul>
     </div>
