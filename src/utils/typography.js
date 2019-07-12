@@ -1,11 +1,22 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
+Wordpress2016.overrideThemeStyles = ( {rhythm}) => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "#navLinks": { 
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      maxWidth: rhythm(30),
+      padding: `0 ${rhythm(3 / 4)}`,
+    },
+    "#navLinks > ul": {
+      listStyle: `none`, 
+      marginBottom:`0`,
+    },
+
   }
 }
 

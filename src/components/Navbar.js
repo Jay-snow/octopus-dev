@@ -25,18 +25,9 @@ function Navbar() {
     <nav id="navbar" >
     
     <Bio />
-    <div style=
-    {{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        zIndex: `2`,
-        maxWidth: rhythm(30),
-        padding: `0 ${rhythm(3 / 4)}`,
-        
-      }}
-      >
+    <div id="navLinks">
 
-      <ul style={{ listStyle: `none`, marginBottom:`0`}}>
+      <ul>
         <ListLink  to="/">Projects</ListLink>
         <li style={{display:`inline-block`, marginRight:`1rem`}}>
           <a style={{color:`#b59575`}} href={resume}>Resume</a></li>
@@ -52,19 +43,23 @@ function Navbar() {
 
 window.onscroll = function() {scrollFunction()};
 
-
 function scrollFunction() {
+
+  let navbar = document.getElementById("navbar");
+  let navbarBio = document.getElementById("navbar-bio");
+
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "0.2rem 2rem";
-    document.getElementById("navbar-bio").style.opacity = "0";
-    document.getElementById("navbar-bio").style.marginBottom = "-30px";
-    document.getElementById("navbar-bio").style.visibility = "hidden";
+    
+    navbar.style.padding = "0.2rem 2rem";
+    navbarBio.style.opacity = "0";
+    navbarBio.style.marginBottom = "-30px";
+    navbarBio.style.visibility = "hidden";
    
   } else {
-    document.getElementById("navbar").style.padding = "2rem 2rem";
-    document.getElementById("navbar-bio").style.opacity = "100";
-    document.getElementById("navbar-bio").style.marginBottom = "0px";
-    document.getElementById("navbar-bio").style.visibility = "visible";
+    navbar.style.padding = "2rem 2rem";
+    navbarBio.style.opacity = "100";
+    navbarBio.style.marginBottom = "0px";
+    navbarBio.style.visibility = "visible";
    
   }
 }
