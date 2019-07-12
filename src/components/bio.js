@@ -22,12 +22,12 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         const siteTitle = data.site.siteMetadata.title
         return (
-          <div
+          <div 
             style={{
               display: `flex`,
               marginLeft: `auto`,
               marginRight: `auto`,
-              maxWidth: rhythm(24),
+              maxWidth: rhythm(30),
               color: `#f1e0d4`,
               padding: `0 ${rhythm(3 / 4)}`,
               
@@ -49,12 +49,13 @@ function Bio() {
             />
             */ }
             
-            <div>
+            <div >
             <h1 style={{  margin:`0`, marginBottom:`0.25em` }}>
              <Link style={{  textDecoration: `none`, boxShadow: `none`, color: `#f1e0d4`, fontSize:`0.75em` }} to="/"> MarcusSnow.dev</Link>
             </h1>
 
-            I'm <Link  to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast.
+           <div id="navbar-bio">  I'm &nbsp;
+            <Link  to="/aboutme/"><strong>{author}</strong></Link>: a web developer, game developer, writer, nerd, and animation enthusiast. </div>
               {` `}
              
             </div>

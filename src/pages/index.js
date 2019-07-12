@@ -41,8 +41,8 @@ class BlogIndex extends React.Component {
       <Navbar />
       <Layout location={this.props.location}  style={{paddingTop:`0`}}>
         <SEO title="About Me" />
-        <h2>Portfolio</h2>
-        <p>Web Developer based in Atlanta. I am currently looking for work in front-end development - I would love to <a href="mailto:marcusjsnow1@gmail.com">hear from you. </a></p>
+        <h2>Hi! My name is Marcus Snow</h2>
+        <p>I am a software developer focused on web development. I stumbled into this passion while working as an online marketer, and discovered a passion for coding. My personal mission statement is to bring joy, convenience , and opportunity to the world through technology.</p>
         <h2> Projects </h2>
 
         <PortfolioProject 
@@ -68,9 +68,12 @@ class BlogIndex extends React.Component {
         <SkillList>HTML </SkillList>
         <SkillList>CSS </SkillList>
       </PortfolioProject>
+
+      
+     
       
       </Layout>
-
+      
     
 
       </div>

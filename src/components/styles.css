@@ -1,0 +1,13 @@
+#navbar {
+    border: 5rem;
+    background-color: #372312;
+    position:fixed;
+    padding: 2rem 2rem;
+    width:100%;
+    transition: 0.8s;
+}
+
+#navbar-bio {
+    transition:0.8s;
+    z-index:0;
+}
