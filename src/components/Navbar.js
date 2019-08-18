@@ -18,6 +18,8 @@ const ListLink = props => (
 
 
 
+
+
 function Navbar() {
     return (
 
@@ -26,7 +28,7 @@ function Navbar() {
     
     <Bio />
     <div id="navLinks">
-
+    
       <ul>
         <ListLink  to="/">Projects</ListLink>
         <li style={{display:`inline-block`, marginRight:`1rem`}}>
