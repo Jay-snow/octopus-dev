@@ -50,7 +50,7 @@ class BlogIndex extends React.Component {
         <ul style=
         {{
           listStyle: `none`,
-          display: `inline`,
+          display: `none`,
         }}
         >
           <SkillList>HTML5 </SkillList>
