@@ -44,13 +44,13 @@ class BlogIndex extends React.Component {
         <SEO title="About Me" />
         <h2>Hi! My name is Marcus Snow</h2>
         <p>I am a software developer focused on web development. I stumbled into this passion while working as an online marketer, and discovered a passion for coding. My personal mission statement is to bring joy, convenience , and opportunity to the world through technology.</p>
-        
+        <div style={{display:'none'}}>
         <h2> <span class="border-brown"> Frontend </span></h2>
-
+        
         <ul style=
         {{
           listStyle: `none`,
-          display: `none`,
+          display: `inline`,
         }}
         >
           <SkillList>HTML5 </SkillList>
@@ -71,7 +71,7 @@ class BlogIndex extends React.Component {
         <SkillList>Bootstrap </SkillList>
         <SkillList>Github </SkillList>
         <SkillList>Gatsby </SkillList>
-
+        </div>
         <h2> Projects </h2>
 
         <PortfolioProject 

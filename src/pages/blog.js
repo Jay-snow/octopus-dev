@@ -15,9 +15,8 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-      <Navbar />
+      <Navbar  />
       <Layout location={this.props.location} title="Blog" >
-
         <SEO title="About Me" />
         
         {posts.map(({ node }) => {
@@ -27,6 +26,7 @@ class BlogIndex extends React.Component {
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
+
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>

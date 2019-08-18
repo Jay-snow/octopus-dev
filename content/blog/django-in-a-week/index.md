@@ -4,6 +4,7 @@ description: "My first week as a web developer, my thoughts, feelings, and thing
 date: "2019-08-12"
 ---
 
+
 Last week, I started my first full time job as a web developer.
 
 It's been really exciting for a number of reasons:  I finally am working a job where I get to code all day, I feel like the work is engaging and interesting, and best yet my coworkers enjoy coding and are very patient with my current ability. Up until now coding for me has been a solitary and isolating interest - something I've done exclusively alone whether at work or at home.
