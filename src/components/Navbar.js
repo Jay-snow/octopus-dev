@@ -43,6 +43,8 @@ function Navbar() {
     
 }
 
+if (typeof window !== 'undefined') {
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -65,5 +67,5 @@ function scrollFunction() {
    
   }
 }
-
+}
 export default Navbar;
