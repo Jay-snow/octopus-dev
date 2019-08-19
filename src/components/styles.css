@@ -7,6 +7,15 @@
     transition: 0.8s;
 }
 
+.nav {
+    margin-bottom:100px;
+}
+
+
+#navbar_container {
+    padding-bottom:180px;
+}
+
 #navbar-bio {
     transition:0.8s;
     z-index:0;
