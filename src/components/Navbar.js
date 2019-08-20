@@ -53,7 +53,7 @@ window.onscroll = function() {scrollFunction()};
     let navbarBio = document.getElementById("navbar-bio");
 
     if ( navbar !== null){
-
+        console.log("This is only a test.");
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         
         navbar.style.padding = "0.2rem 2rem";
