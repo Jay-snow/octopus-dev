@@ -77,7 +77,7 @@ class BlogIndex extends React.Component {
         <PortfolioProject 
       name="Poke-A-Tweet"
       description="A twitter inspired social media website. Features include login and authentication, unique user profile pages, a shared timeline, and more."
-      plink="https://snowjay.org/projects/twitter-clone/"
+      plink="https://snowjay.000webhostapp.com/index.php"
       >
         <SkillList>PHP </SkillList>
         <SkillList>mySQL </SkillList>

@@ -9,6 +9,7 @@ yarn-error.log*
 content/blog/hello-world
 content/blog/hi-folks
 content/blog/my-second-post
+content/blog/a-view-of-vue
 
 # Runtime data
 pids
