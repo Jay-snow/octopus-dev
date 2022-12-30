@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.2.1",
-    "gatsby": "^2.13.68",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.8",
     "gatsby-paginate": "^1.1.1",
     "gatsby-plugin-feed": "^2.3.6",
